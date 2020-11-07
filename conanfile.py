@@ -5,7 +5,7 @@ from conans import CMake
 
 class PackagerTGUI(ConanFile):
     name = 'tgui'
-    version = '0.8'
+    version = '0.8.8'
     branch = 'stable'
     settings = 'os', 'compiler', 'arch', 'build_type'
     options = {'shared': [True, False]}
@@ -14,8 +14,8 @@ class PackagerTGUI(ConanFile):
     license = 'zlib/png'
     url='https://github.com/texus/TGUI'
     exports = ['CMakeLists.txt']
-    so_version = '0.8'
-    ZIP_FOLDER_NAME = 'TGUI-0.8'
+    so_version = '0.8.0'
+    ZIP_FOLDER_NAME = 'TGUI-0.8.8'
 
     def source(self):
         zip_name = '0.8.zip'
